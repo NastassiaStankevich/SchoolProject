@@ -5,6 +5,7 @@ public class SchoolManager {
         double sum = 0;
 
         for (int i = 0; i < groups.length; i++) {
+
            sum += calculateGroupAvgMark(groups[i]);
         }
         return sum/ groups.length;
