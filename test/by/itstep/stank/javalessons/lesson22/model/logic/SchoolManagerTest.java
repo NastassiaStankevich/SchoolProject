@@ -3,22 +3,34 @@ import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
+
 
 
 public class SchoolManagerTest {
 
-    private int [][] groups;
+    private static int [][] groups;
 
-    @Before
-    public void init() {
-         groups = new int[][] {
+    @BeforeClass
+    public static void init() {
+        groups = new int[][] {
                 {7, 7, 8, 2},
                 {9, 8, 9, 10},
                 {7, 7, 1},
                 {8, 8, 10, 10}
-         };
+        };
     }
+
+ //   @Before
+ //   public void init() {
+ //        groups = new int[][] {
+ //               {7, 7, 8, 2},
+ //               {9, 8, 9, 10},
+    //               {7, 7, 1},
+//                {8, 8, 10, 10}
+//         };
+//    }
 
     @After
     public void destroy(){
